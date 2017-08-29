@@ -1,0 +1,10 @@
+<h1>Films <%= link_to "+", new_film_path %></h1>
+<hr/>
+
+<ul>
+    <% @films.each do |film| %>
+        <li>
+            <%= link_to film.title, film %>
+        </li>
+    <% end %>
+</ul>
